@@ -13,9 +13,15 @@ class evenodd
 		int num;
 		Scanner reader=new Scanner(System.in);
 		num=reader.nextInt();
-		if(num%2==0)
-		System.out.println(num + "even");
+		if (num > 0)
+		{
+			if(num%2==0)
+			   System.out.println("Even");
+			else
+			   System.out.println("odd");
+		}
 		else
-		System.out.println(num +"odd");
+			System.out.println("invalid");
+			
 	}
 }
